@@ -121,7 +121,7 @@ async function loadModel(url, options = {}) {
   }
 }
 
-const modelCandidates = ['/models/example-scene.gltf'];
+const modelCandidates = [`${import.meta.env.BASE_URL}models/example-scene.gltf`];
 
 (async () => {
   for (const candidate of modelCandidates) {
